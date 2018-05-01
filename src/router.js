@@ -5,7 +5,7 @@ import App from './App'
 import Login from './pages/login'
 import Home from './pages/home'
 import Admin from './pages/admin'
-import Order from './pages/order'
+// import Order from './pages/order'
 
 export default class ERouter extends React.Component{
     render(){
@@ -20,7 +20,7 @@ export default class ERouter extends React.Component{
                                     <Home>
                                         <Switch>
                                             <Route exact path='/home' component={Admin}/>
-                                            <Route path='/home/order' component={Order}/>
+                                            {/* <Route path='/home/order' component={Order}/> */}
                                             {/* 失败页面重定向 */}
                                             <Redirect to='/home'/>
                                         </Switch>

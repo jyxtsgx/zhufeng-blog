@@ -11,7 +11,6 @@ export default class Header extends React.Component{
             url:urls.signout,
             type:'get'
         }).then((response)=>{
-            debugger
             if(response.result.code==0){
                 history.push('/')
             }
